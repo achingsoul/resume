@@ -74,6 +74,12 @@ aside .nav li{
     margin: 60px;
     font-size: larger;
 }
+@media screen and (max-width: 768px){
+    aside .nav li{
+    margin: 20px 0;
+    padding-left: 34px
+    }
+}
 aside .nav li.nav-aboutme.current a,
 aside .nav li.nav-project.current a,
 aside .nav li.nav-skill.current a,
@@ -159,7 +165,7 @@ aside .icon li:hover{
     aside .icon{
     display: flex;
     justify-content: center;
-    width: -webkit-fill-available;
+    width: 100%;
     }
     aside .icon li{
         margin: auto;
