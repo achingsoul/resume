@@ -76,7 +76,7 @@ aside .nav li{
 }
 @media screen and (max-width: 768px){
     aside .nav li{
-    margin: 20px 0;
+    margin: 30px 0;
     padding-left: 34px
     }
 }
