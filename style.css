@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3{
+    font-weight: normal;
+    
+}
+body{
+    background-color: #F8F8F8;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+svg{
+    width: 40px;
+    height: 40px;
+}
+section{
+    margin-left: 250px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.layout .content{
+    display: none;
+}
+.layout .content.active{
+    display: block;
+}
+
+/* aside */
+aside{
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(135deg, #DBDBDB 0, #B4BBC4 100%);
+    position: fixed;
+}
+aside h1{
+    text-align: center;
+    margin: 30px 0;
+
+}
+aside h1 a{
+    color: #000;
+    font-size: 30px;
+}
+aside .nav{}
+aside .nav li{
+    margin: 60px;
+    font-size: larger;
+}
+aside .nav li.nav-aboutme.current a,
+aside .nav li.nav-project.current a,
+aside .nav li.nav-skill.current a,
+aside .nav li.nav-contact.current a{
+    color: #F46149;
+}
+aside .nav a{
+    display: block;
+    color: #4D5257;
+}
+aside .nav small{
+    font-size: 12px;
+    font-weight: normal;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+.aside-info .download{
+    text-align: center;
+    width: 100px;
+    border: 1px solid #F46149;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 100px;
+}
+.aside-info .download a{
+    vertical-align: middle;
+    color: #F46149;
+    line-height: 32px;
+}
+.aside-info .download a:hover{
+    animation: jello 1s;
+}
+
+aside .icon{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    padding: 0 20px;
+}
+aside .icon li{
+    padding: 15px;
+    border-radius: 50%;
+    transition: .8s;
+}
+aside .icon a{}
+aside .icon li:hover{
+    animation: rubberBand 1s;
+}
+
+/* aboutme*/
+.aboutme{}
+.aboutme .head{
+    margin: 0 auto;
+    padding-top: 30px;
+    animation: fadeInDown 1s;
+}
+.aboutme .head a{}
+.aboutme .head a img{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+.aboutme .description{
+    line-height: 60px;
+    padding-top: 50px;
+}
+.aboutme .description p{
+    font-size: larger;
+    color: #4D5257;
+}
+
+/* project */
+.project{}
+.project h2{
+    padding-top: 50px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: #4D5257;
+    animation: fadeInDown 1s;
+}
+.project .item{
+    max-width: 600px;
+    margin: 60px auto;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 30px, rgba(0, 0, 0, 0.23) 0px 6px 10px;
+    background: #fff;
+}
+.project .item h3{
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #4D5257;
+}
+.project .item img{
+    display: block;
+    width: 100%;
+    background: #ccc;
+}
+
+.project .item .describe{
+    padding: 0 20px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+.project .item .describe p{
+    padding-top: 20px;
+    color: #4D5257;
+}
+
+.project .item .link{
+    padding: 8px;
+}
+.project .item .link .github{
+    margin: 20px;
+    padding: 5px 20px;
+    font-size: 14px;
+    line-height: 55px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: ease .5s;
+    color: #4D5257;
+}
+
+
+/* skill */
+.skill{
+    color: #4D5257;
+    min-height: 100vh;
+}
+.skill h2{
+    padding-top: 50px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: #4D5257;
+    animation: fadeInDown 1s;
+}
+.skill-content{
+    display: flex;
+    justify-content: space-around;
+    text-align: left; 
+    position: relative;
+    padding: 20px 0;
+    margin: 20px 75px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 30px, rgba(0, 0, 0, 0.53) 0px 0px 10px;
+}
+.skill-content ul{
+    margin: 0 40px;
+}
+.skill-content li{
+    list-style: circle;
+    padding: 10px 0;
+}
+
+/* contact */
+.contact{}
+.contact h2{
+    padding-top: 50px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: #4D5257;
+    animation: fadeInDown 1s;
+}
+.contact p{
+    text-align: left;
+    max-width: 418px;
+    margin: 0 auto;
+    padding: 25px 0;
+    font-size: 24px;
+}
+.contact p svg{
+    vertical-align: middle;
+    padding: 0 5px;
+    margin-right: 5px;
+}

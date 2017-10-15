@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>孟佩瑶的个人简历</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./animate.css">
+</head>
+
+<body>
+    <div class="layout">
+        <!--aside-->
+        <aside>
+            <h1><a href="#">个人简历</a></h1>
+            <div class="aside-info">
+                <ul id="nav" class="nav">
+                    <li class="nav-aboutme"><a href="#">个人<small>About me</small></li>
+                    <li class="nav-project"><a href="#">项目<small>Project</small></li>
+                    <li class="nav-skill"><a href="#">技能<small>Skill</small></li>
+                    <li class="nav-contact"><a href="#">联系<small>Contact</small></li>
+                </ul>
+                <div class="download">
+                    <a href="#">PDF 下载</a>
+                </div>
+            <ul class="icon">
+                <li>
+                    <a href="https://achingsoul.github.io/" target="_blank">
+                        <svg>
+                            <use xlink:href="#icon-book"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/achingsoul" target="_blank">
+                        <svg>
+                            <use xlink:href="#icon-github"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <svg>
+                            <use xlink:href="#icon-email"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+    </div>
+    </aside>
+
+    <!--About me-->
+    <section class="content aboutme active">
+        <div class="head">
+            <a href="#"><img src="./头像.jpg" alt=""></a>
+        </div>
+        <div class="description">
+            <p>孟佩瑶</p>
+            <p>24岁</p>
+            <p>学历：本科</p>
+            <p>职位：前端工程师</p>
+            <p>期望城市：北京</p>
+        </div>
+    </section>
+
+    <!--Project-->
+    <section class="content project"></section>
+
+
+    <!--Project-->
+    <section class="content project">
+        <h2>Project</h2>
+        <div class="item">
+            <h3>网易云音乐（手机端）</h3>
+            <div class="netEase">
+                <a href="#">
+                        <img src="./images/1.png" alt="">
+                    </a>
+            </div>
+            <div class="describe">
+                <p>
+                    该项目是仿网易云音乐移动端的页面，使用tab切换、媒体查询，支持歌曲播放、暂停、歌词滚动、歌曲搜索等功能。采用JSON文件模拟歌单列表获取数据，歌曲音频文件储存于第三方七牛云。
+                </p>
+                <p>
+                    技术栈：jQuery + JSON + webpack
+                </p>
+            </div>
+            <div class="link">
+                <a class="github" href="https://achingsoul.github.io/NetEaseCloudMusic/">在线预览</a>
+                <a class="github" href="https://github.com/achingsoul/NetEaseCloudMusic">Github源码</a>
+            </div>
+        </div>
+
+        <div class="item">
+            <h3>Vue简历编辑器</h3>
+            <div class="vue-resume">
+                <a href="#">
+                        <img src="./images/2.png" alt="">
+                    </a>
+            </div>
+            <div class="describe">
+                <p>
+                    基于Vue的实时编辑简历应用，用webpack进行打包。
+                </p>
+                <p>
+                    技术栈：jQuery + Vue + webpack + npm + （LeanCloud）
+                </p>
+            </div>
+            <div class="link">
+                <a class="github" href="https://achingsoul.github.io/vue-resumer/dist/">在线预览</a>
+                <a class="github" href="https://github.com/achingsoul/vue-resumer">Github源码</a>
+            </div>
+        </div>
+
+        <div class="item">
+            <h3>登录注册框</h3>
+            <div class="login">
+                <a href="#">
+                        <img src="./images/3.png" alt="">
+                    </a>
+            </div>
+            <div class="describe">
+                <p>
+                    一个操作简便的登录框，以LeanCloud为部署，支持多用户在线注册、登录账号等功能，数据同步到LeanCloud。
+                </p>
+                <p>
+                    技术栈：jQuery + LeanCloud
+                </p>
+            </div>
+            <div class="link">
+                <a class="github" href="https://achingsoul.github.io/login-demo/">在线预览</a>
+                <a class="github" href="https://github.com/achingsoul/login-demo">Github源码</a>
+            </div>
+        </div>
+    </section>
+
+    <!--skill-->
+    <section class="content skill"></section>
+
+    <!--skill-->
+    <section class="content skill">
+        <h2>Skill</h2>
+        <div class="skill-content">
+            <ul>
+                <li>熟练掌握HTML 5、常用CSS 3制作像素级还原的静态页面</li>
+                <li>熟悉JavaScript，熟悉ES6部分语法，熟练使用jQuery，了解jQuery常见API</li>
+                <li>掌握动态REM，可以使用动态REM布局适配移动端页面</li>
+                <li>了解HTTP协议，以及HTTP请求、响应的定义</li>
+                <li>熟悉npm & Git，了解基本的使用方式并能够完成基本的代码提交</li>
+                <li>了解MVC、MVVM框架基本原理，了解Vue.js，能够使用Vue进行基本的项目开发</li>
+                <li>通过CET6，英语能力良好，面向Google编程</li>
+                <li>具有书写技术博客的习惯</li>
+            </ul>
+        </div>
+    </section>
+
+     <!--contact-->
+    <section class="content contact"></section>
+
+
+    <!--contact-->
+    <section class="content contact">
+        <h2>Contact</h2>
+        <p><svg><use xlink:href="#icon-email"></use></svg>邮箱：peiyao0905@hotmail.com</p>
+        <p><svg><use xlink:href="#icon-qq"></use></svg>QQ：345004536</p>
+        <p><svg><use xlink:href="#icon-phone"></use></svg>电话：13157590427</p>
+    </section>
+
+    </div>
+
+    <script src="//at.alicdn.com/t/font_435782_mxjqzmgllyccv7vi.js"></script>
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
