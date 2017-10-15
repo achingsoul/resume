@@ -190,6 +190,11 @@ aside .icon li:hover{
     line-height: 60px;
     padding-top: 50px;
 }
+@media screen and (max-width: 768px){
+    .aboutme .description{
+        padding-top: unset;
+    }
+}
 .aboutme .description p{
     font-size: larger;
     color: #4D5257;
