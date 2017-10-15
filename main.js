@@ -11,6 +11,10 @@ $(function () {
         })
     }
 
+    $('aside .menu').on('click',function(){
+        $('aside').toggleClass('active')
+    })
+
     $('#nav').on('click', 'li', function () {
         setTimeout(function () {
             $('.aside').removeClass('active')
