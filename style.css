@@ -298,6 +298,10 @@ aside .icon li:hover{
         padding: 8px 0;
     }
 }
+.skill-content em{
+    color: #F46149;
+    font-style: unset;
+}
 
 /* contact */
 .contact{}
