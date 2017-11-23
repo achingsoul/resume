@@ -3,8 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-h1,h2,h3{
+h1,h2,h3,p{
     font-weight: normal;
+    font-family: 'Play', -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
     
 }
 body{
@@ -171,6 +172,12 @@ aside .icon li:hover{
         margin: auto;
     }
 }
+aside .icon li p{
+    text-align: -webkit-center;
+    font-size: smaller;
+    color: #4D5257;
+    padding-top: 7px;
+}
 
 /* aboutme*/
 .aboutme{}
@@ -194,6 +201,10 @@ aside .icon li:hover{
     .aboutme .description{
         padding-top: unset;
     }
+}
+.aboutme .description h2{
+    font-size: xx-large;
+    padding-top: 10px;
 }
 .aboutme .description p{
     font-size: larger;
@@ -265,42 +276,71 @@ aside .icon li:hover{
     color: #4D5257;
     animation: fadeInDown 1s;
 }
-.skill-content{
+.skill-list-wrapper{
+    max-width: 980px;
+    margin: 40px auto;
     display: flex;
-    justify-content: space-around;
-    text-align: left; 
-    position: relative;
-    padding: 20px 0;
-    margin: 20px 75px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 30px, rgba(0, 0, 0, 0.53) 0px 0px 10px;
+    justify-content: center;
 }
-@media screen and (max-width: 1240px){
-    .skill h2{
-        margin-bottom: 10px;
+@media screen and (max-width: 768px){
+    .skill-list-wrapper{
+        flex-direction: column;
     }
-    .skill-content{
-        display: block;
-        text-align: left; 
-        padding: 0;
-        margin: auto;
+}
+.skill-list{
+    margin: 0 40px;
+    width: 50%;
+}
+@media screen and (max-width: 768px){
+    .skill-list{
+        width: auto;
         z-index: -1;
     }
 }
-.skill-content ul{
-    margin: 0 40px;
+.skill-list li{
+    padding: 10px;
 }
-.skill-content li{
-    list-style: circle;
-    padding: 10px 0;
+.skill-title{
+    padding: 8px 0;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: start;
 }
-@media screen and (max-width: 1240px){
-    .skill-content li{
-        padding: 8px 0;
-    }
+.skill-list p{
+    position: relative;
+    padding-left: 20px;
+    color: #555;
+    text-align: start;
 }
-.skill-content em{
-    color: #F46149;
-    font-style: unset;
+.skill-list p::before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    border: 1px solid rgb(244, 97, 73);
+}
+
+.skill-tag{
+    margin: 20px 0 40px;
+}
+.tags{
+    margin: 0 auto;
+    text-align: center;
+}
+.tag{
+    margin: 8px 2px;
+    display: inline-block;
+    background: #B4BBC4;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, .3);
+}
+.tag.unfamiliar{
+    opacity: 0.6;
 }
 
 /* contact */
@@ -314,10 +354,9 @@ aside .icon li:hover{
 }
 .contact p{
     text-align: left;
-    max-width: 420px;
+    max-width: 320px;
     margin: 0 auto;
     padding: 25px 0;
-    font-size: 24px;
 }
 .contact p svg{
     vertical-align: middle;
